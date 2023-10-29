@@ -32,7 +32,7 @@
                 <th>Password</th>
                 <th>PasswordExpiry</th>
                 <th>OldValues</th>
-                <th>Pk</th>
+                <th>PK</th>
             </tr>
         </thead>
         <tbody id="table-body">
@@ -64,6 +64,7 @@
                         <td>${item.EntityPayload?.Password || ''}</td>
                         <td>${item.EntityPayload?.PasswordExpiry || ''}</td>
                         <td>${item.EntityPayload?.OldValues || ''}</td>
+                        <td>${item.EntityPayload?.PK || ''}</td>
                     </tr>
                 `;
             });
