@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <link rel="stylesheet" type="text/css" href="src/styles.css">
     <meta charset="utf-8">
     <title>DataTable Example</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
@@ -28,6 +29,10 @@
                 <th>CreatedTimestamp</th>
                 <th>ContextID</th>
                 <th>TraceID</th>
+                <th>Password</th>
+                <th>PasswordExpiry</th>
+                <th>OldValues</th>
+                <th>Pk</th>
             </tr>
         </thead>
         <tbody id="table-body">
@@ -56,6 +61,10 @@
                         <td>${item.EntityPayload?.CreatedBy || ''}<td>
                         <td>${item.EntityPayload?.cp-trace-id || ''}<td>
                         <td>${item.EntityPayload?.ContextId || ''}<td>
+                        <td>${item.EntityPayload?.Pk || ''}<td>
+                        <td>${item.EntityPayload?.Password || ''}<td>
+                        <td>${item.EntityPayload?.PasswordExpiry || ''}<td>
+                        <td>${item.EntityPayload?.OldValues || ''}<td>
                     </tr>
                 `;
             });
