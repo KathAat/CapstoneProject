@@ -73,18 +73,17 @@
                 `;
             });
 
-            // Initialize DataTable with Buttons extension
-        <div id="buttons">
+            // Initialize DataTable
             $('#group4').DataTable({
                 paging: true,
                 searching: true,
                 ordering: true,
-                buttons: [
+              <div id="buttons">  buttons: [
                     'copy', 'csv', 'excel', 'pdf'
-                ],
+                ], </div>
                 dom: 'Bfrtip', // Add this line to specify the location of the buttons
             });
-        })</div>
+        })
         .catch(error => {
             console.error('Error fetching JSON data:', error);
         });
