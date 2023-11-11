@@ -78,16 +78,13 @@
                 paging: true,
                 searching: true,
                 ordering: true,
-                dom: 'Bfrtip',
-                initComplete:  function (settings, json) {
-                $('.button').removeClass('dt-button');
-                $('button').removeClass('buttons-html5 '); // Add this line to specify the location of the buttons
+                dom: 'Bfrtip',// Add this line to specify the location of the buttons
                 },
                 buttons: [
                     'copy', 'csv', 'excel', 'pdf'  
                 ],
                 
-        })
+        }),
         .catch(error => {
             console.error('Error fetching JSON data:', error);
         });
