@@ -47,4 +47,19 @@ th {
 
 .buttons-copy:active, .buttons-csv:active, .buttons-excel:active, .buttons-pdf:active {
   box-shadow: #D6D6E7 0 3px 7px inset;
-  transform: translateY(2px); }
+  transform: translateY(2px); 
+}
+
+
+#group4_filter {
+ box-sizing: border-box;
+ border-width: inherit;
+ padding-right: 300px;
+}
+  
+  
+td:hover {
+ color: red;
+}
+  
+
